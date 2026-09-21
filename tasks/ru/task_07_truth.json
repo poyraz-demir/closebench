@@ -1,0 +1,158 @@
+{
+ "errors": [
+  {
+   "err_id": "E1",
+   "kind": "unrecorded_invoice",
+   "description": "Счёт подрядчика SUB на 46000 не проведён: занижены себестоимость и кредиторка",
+   "entry_ids": [],
+   "accounts": [
+    "5000",
+    "2000"
+   ],
+   "amount": "46000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "5000",
+    "credit_account": "2000",
+    "amount": "46000.00"
+   }
+  },
+  {
+   "err_id": "E2",
+   "kind": "duplicate_invoice",
+   "description": "Счёт AUD-114 проведён дважды (JE00135 и JE00136): завышены расходы и кредиторка на 32500",
+   "entry_ids": [
+    "JE00135",
+    "JE00136"
+   ],
+   "accounts": [
+    "6300",
+    "2000"
+   ],
+   "amount": "32500.00",
+   "fix": {
+    "type": "require_reversal",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "2000",
+    "credit_account": "6300",
+    "amount": "32500.00"
+   }
+  },
+  {
+   "err_id": "E5",
+   "kind": "revenue_cutoff",
+   "description": "Аванс 60000 за услуги следующего года признан выручкой периода",
+   "entry_ids": [
+    "JE00137"
+   ],
+   "accounts": [
+    "4000",
+    "2400"
+   ],
+   "amount": "60000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "4000",
+    "credit_account": "2400",
+    "amount": "60000.00"
+   }
+  },
+  {
+   "err_id": "E9",
+   "kind": "missing_recurring",
+   "description": "Начисление «связь и охрана» 13000 отсутствует за 07.2026; во всех прочих месяцах года оно есть",
+   "entry_ids": [],
+   "accounts": [
+    "6600",
+    "2100"
+   ],
+   "amount": "13000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6600",
+    "credit_account": "2100",
+    "amount": "13000.00"
+   }
+  },
+  {
+   "err_id": "E11",
+   "kind": "depreciation_prorata",
+   "description": "ОС 342000 введено 2026-11-11, амортизация за 20 дней (3800) не начислена",
+   "entry_ids": [
+    "JE00138"
+   ],
+   "accounts": [
+    "6400",
+    "1590"
+   ],
+   "amount": "3800",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6400",
+    "credit_account": "1590",
+    "amount": "3800"
+   }
+  },
+  {
+   "err_id": "E13",
+   "kind": "payroll_cutoff",
+   "description": "Резерв по зарплате за 5 дней (20600) не начислен за 11.2026; во всех прочих месяцах начислялся",
+   "entry_ids": [],
+   "accounts": [
+    "6000",
+    "2200"
+   ],
+   "amount": "20600.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6000",
+    "credit_account": "2200",
+    "amount": "20600.00"
+   }
+  },
+  {
+   "err_id": "E16",
+   "kind": "accrual_not_released",
+   "description": "При выплате за 05.2026 резерв прошлого месяца 20600 не погашен: вся сумма ушла в расход, обязательство 2200 зависло",
+   "entry_ids": [],
+   "accounts": [
+    "2200",
+    "6000"
+   ],
+   "amount": "20600.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "2200",
+    "credit_account": "6000",
+    "amount": "20600.00"
+   }
+  }
+ ]
+}

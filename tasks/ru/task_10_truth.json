@@ -1,0 +1,181 @@
+{
+ "errors": [
+  {
+   "err_id": "E1",
+   "kind": "unrecorded_invoice",
+   "description": "Счёт подрядчика SUB на 59000 не проведён: занижены себестоимость и кредиторка",
+   "entry_ids": [],
+   "accounts": [
+    "5000",
+    "2000"
+   ],
+   "amount": "59000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "5000",
+    "credit_account": "2000",
+    "amount": "59000.00"
+   }
+  },
+  {
+   "err_id": "E2",
+   "kind": "duplicate_invoice",
+   "description": "Счёт AUD-114 проведён дважды (JE00135 и JE00136): завышены расходы и кредиторка на 32000",
+   "entry_ids": [
+    "JE00135",
+    "JE00136"
+   ],
+   "accounts": [
+    "6300",
+    "2000"
+   ],
+   "amount": "32000.00",
+   "fix": {
+    "type": "require_reversal",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "2000",
+    "credit_account": "6300",
+    "amount": "32000.00"
+   }
+  },
+  {
+   "err_id": "E4",
+   "kind": "prepaid_not_deferred",
+   "description": "Годовая лицензия 120000 списана целиком; в периоде должно остаться 10000",
+   "entry_ids": [
+    "JE00137"
+   ],
+   "accounts": [
+    "6500",
+    "1300"
+   ],
+   "amount": "110000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1300",
+    "credit_account": "6500",
+    "amount": "110000.00"
+   }
+  },
+  {
+   "err_id": "E8",
+   "kind": "intercompany_mismatch",
+   "description": "Межкомпанийные услуги 60000 не отражены: расхождение при консолидации",
+   "entry_ids": [],
+   "accounts": [
+    "6900",
+    "2500"
+   ],
+   "amount": "60000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6900",
+    "credit_account": "2500",
+    "amount": "60000.00"
+   }
+  },
+  {
+   "err_id": "E10",
+   "kind": "fx_revaluation",
+   "description": "Валютная кредиторка EUR 1800 не переоценена: курс вырос с 98.41 до 102.72, разница 7758.0000",
+   "entry_ids": [
+    "JE00138"
+   ],
+   "accounts": [
+    "6700",
+    "2000"
+   ],
+   "amount": "7758.0000",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6700",
+    "credit_account": "2000",
+    "amount": "7758.0000"
+   }
+  },
+  {
+   "err_id": "E11",
+   "kind": "depreciation_prorata",
+   "description": "ОС 306000 введено 2026-11-11, амортизация за 20 дней (3400) не начислена",
+   "entry_ids": [
+    "JE00139"
+   ],
+   "accounts": [
+    "6400",
+    "1590"
+   ],
+   "amount": "3400",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6400",
+    "credit_account": "1590",
+    "amount": "3400"
+   }
+  },
+  {
+   "err_id": "E14",
+   "kind": "depreciation_stopped",
+   "description": "Амортизация 4000 не начислена за 02.2026; ряд DEP рвётся",
+   "entry_ids": [],
+   "accounts": [
+    "6400",
+    "1590"
+   ],
+   "amount": "4000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6400",
+    "credit_account": "1590",
+    "amount": "4000.00"
+   }
+  },
+  {
+   "err_id": "E15",
+   "kind": "prepaid_amort_stopped",
+   "description": "Списание годовой страховки 10500 не проведено за 10.2026; остаток РБП завышен",
+   "entry_ids": [],
+   "accounts": [
+    "6800",
+    "1300"
+   ],
+   "amount": "10500.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6800",
+    "credit_account": "1300",
+    "amount": "10500.00"
+   }
+  }
+ ]
+}

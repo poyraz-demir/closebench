@@ -1,0 +1,178 @@
+{
+ "errors": [
+  {
+   "err_id": "E1",
+   "kind": "unrecorded_invoice",
+   "description": "Contractor invoice SUB for 80000 not recorded: cost of sales and payables understated",
+   "entry_ids": [],
+   "accounts": [
+    "5000",
+    "2000"
+   ],
+   "amount": "80000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "5000",
+    "credit_account": "2000",
+    "amount": "80000.00"
+   }
+  },
+  {
+   "err_id": "E3",
+   "kind": "capex_expensed",
+   "description": "Equipment costing 195000 with a 5-year useful life charged to other expenses instead of fixed assets",
+   "entry_ids": [
+    "JE00133"
+   ],
+   "accounts": [
+    "6900",
+    "1500"
+   ],
+   "amount": "195000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1500",
+    "credit_account": "6900",
+    "amount": "195000.00"
+   }
+  },
+  {
+   "err_id": "E5",
+   "kind": "revenue_cutoff",
+   "description": "Advance 85000 for next year's services recognised as revenue of the period",
+   "entry_ids": [
+    "JE00134"
+   ],
+   "accounts": [
+    "4000",
+    "2400"
+   ],
+   "amount": "85000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "4000",
+    "credit_account": "2400",
+    "amount": "85000.00"
+   }
+  },
+  {
+   "err_id": "E10",
+   "kind": "fx_revaluation",
+   "description": "Foreign-currency payable EUR 2100 not revalued: rate rose from 96.55 to 99.87, difference 6972.0000",
+   "entry_ids": [
+    "JE00135"
+   ],
+   "accounts": [
+    "6700",
+    "2000"
+   ],
+   "amount": "6972.0000",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6700",
+    "credit_account": "2000",
+    "amount": "6972.0000"
+   }
+  },
+  {
+   "err_id": "E13",
+   "kind": "payroll_cutoff",
+   "description": "Payroll accrual for 6 days (23040) not booked for Jul 2026; booked in every other month",
+   "entry_ids": [],
+   "accounts": [
+    "6000",
+    "2200"
+   ],
+   "amount": "23040.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6000",
+    "credit_account": "2200",
+    "amount": "23040.00"
+   }
+  },
+  {
+   "err_id": "E15",
+   "kind": "prepaid_amort_stopped",
+   "description": "Annual insurance amortisation 11000 not posted for Feb 2026; prepaid balance overstated",
+   "entry_ids": [],
+   "accounts": [
+    "6800",
+    "1300"
+   ],
+   "amount": "11000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6800",
+    "credit_account": "1300",
+    "amount": "11000.00"
+   }
+  },
+  {
+   "err_id": "E16",
+   "kind": "accrual_not_released",
+   "description": "On the Jun 2026 payroll run the prior month's accrual 23040 was not released: the full amount went to expense, liability 2200 left hanging",
+   "entry_ids": [],
+   "accounts": [
+    "2200",
+    "6000"
+   ],
+   "amount": "23040.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "2200",
+    "credit_account": "6000",
+    "amount": "23040.00"
+   }
+  },
+  {
+   "err_id": "E17",
+   "kind": "inventory_receipt_gap",
+   "description": "Goods receipt for Nov 2026 of 190680 not recorded although cost of sales was booked: inventory and payables understated",
+   "entry_ids": [],
+   "accounts": [
+    "1200",
+    "2000"
+   ],
+   "amount": "190680.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1200",
+    "credit_account": "2000",
+    "amount": "190680.00"
+   }
+  }
+ ]
+}

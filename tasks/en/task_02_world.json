@@ -1,0 +1,3268 @@
+{
+ "company": "Ridge Ltd",
+ "seed": 2,
+ "period": {
+  "start": "2026-11-01",
+  "end": "2026-11-30"
+ },
+ "accounts": [
+  {
+   "code": "1000",
+   "name": "Cash at bank",
+   "type": "asset"
+  },
+  {
+   "code": "1100",
+   "name": "Accounts receivable",
+   "type": "asset"
+  },
+  {
+   "code": "1200",
+   "name": "Inventory",
+   "type": "asset"
+  },
+  {
+   "code": "1300",
+   "name": "Prepaid expenses",
+   "type": "asset"
+  },
+  {
+   "code": "1500",
+   "name": "Fixed assets",
+   "type": "asset"
+  },
+  {
+   "code": "1590",
+   "name": "Accumulated depreciation",
+   "type": "asset"
+  },
+  {
+   "code": "2000",
+   "name": "Accounts payable",
+   "type": "liability"
+  },
+  {
+   "code": "2100",
+   "name": "Accrued liabilities",
+   "type": "liability"
+  },
+  {
+   "code": "2200",
+   "name": "Payroll payable",
+   "type": "liability"
+  },
+  {
+   "code": "2300",
+   "name": "VAT payable",
+   "type": "liability"
+  },
+  {
+   "code": "2400",
+   "name": "Deferred revenue",
+   "type": "liability"
+  },
+  {
+   "code": "2500",
+   "name": "Intercompany balances",
+   "type": "liability"
+  },
+  {
+   "code": "3000",
+   "name": "Share capital",
+   "type": "equity"
+  },
+  {
+   "code": "3100",
+   "name": "Retained earnings",
+   "type": "equity"
+  },
+  {
+   "code": "4000",
+   "name": "Revenue",
+   "type": "income"
+  },
+  {
+   "code": "5000",
+   "name": "Cost of sales",
+   "type": "expense"
+  },
+  {
+   "code": "6000",
+   "name": "Salaries and wages",
+   "type": "expense"
+  },
+  {
+   "code": "6100",
+   "name": "Rent",
+   "type": "expense"
+  },
+  {
+   "code": "6200",
+   "name": "Electricity and utilities",
+   "type": "expense"
+  },
+  {
+   "code": "6300",
+   "name": "Professional services",
+   "type": "expense"
+  },
+  {
+   "code": "6400",
+   "name": "Depreciation",
+   "type": "expense"
+  },
+  {
+   "code": "6500",
+   "name": "Software",
+   "type": "expense"
+  },
+  {
+   "code": "6600",
+   "name": "Telecom and security",
+   "type": "expense"
+  },
+  {
+   "code": "6700",
+   "name": "Foreign exchange differences",
+   "type": "expense"
+  },
+  {
+   "code": "6800",
+   "name": "Insurance",
+   "type": "expense"
+  },
+  {
+   "code": "6900",
+   "name": "Other expenses",
+   "type": "expense"
+  }
+ ],
+ "entries": [
+  {
+   "eid": "JE00001",
+   "date": "2026-01-01",
+   "memo": "Founder's capital contribution",
+   "source": "manual",
+   "ref": "",
+   "lines": [
+    {
+     "account": "1000",
+     "debit": "2500000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "3000",
+     "debit": "0.00",
+     "credit": "2500000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00002",
+   "date": "2026-01-05",
+   "memo": "Opening inventory purchase",
+   "source": "manual",
+   "ref": "STK-000",
+   "lines": [
+    {
+     "account": "1200",
+     "debit": "300000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "300000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00003",
+   "date": "2026-01-10",
+   "memo": "Equipment purchase",
+   "source": "manual",
+   "ref": "OS-001",
+   "lines": [
+    {
+     "account": "1500",
+     "debit": "240000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "240000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00004",
+   "date": "2026-01-02",
+   "memo": "Annual insurance policy",
+   "source": "manual",
+   "ref": "INS-000",
+   "lines": [
+    {
+     "account": "1300",
+     "debit": "156000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "156000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00005",
+   "date": "2026-01-28",
+   "memo": "Revenue for Jan 2026",
+   "source": "ar",
+   "ref": "INV-202601",
+   "lines": [
+    {
+     "account": "1100",
+     "debit": "440000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "4000",
+     "debit": "0.00",
+     "credit": "440000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00006",
+   "date": "2026-01-26",
+   "memo": "Goods received Jan 2026",
+   "source": "ap",
+   "ref": "STK-202601",
+   "lines": [
+    {
+     "account": "1200",
+     "debit": "184800.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "184800.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00007",
+   "date": "2026-01-28",
+   "memo": "Cost of sales for Jan 2026",
+   "source": "manual",
+   "ref": "",
+   "lines": [
+    {
+     "account": "5000",
+     "debit": "184800.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1200",
+     "debit": "0.00",
+     "credit": "184800.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00008",
+   "date": "2026-01-27",
+   "memo": "Customer receipts Jan",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "1000",
+     "debit": "396000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1100",
+     "debit": "0.00",
+     "credit": "396000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00009",
+   "date": "2026-01-27",
+   "memo": "Payment to goods suppliers Jan",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "2000",
+     "debit": "184800.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "184800.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00010",
+   "date": "2026-01-05",
+   "memo": "Rent Jan 2026",
+   "source": "ap",
+   "ref": "RENT-01",
+   "lines": [
+    {
+     "account": "6100",
+     "debit": "45000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "45000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00011",
+   "date": "2026-01-25",
+   "memo": "Payroll Jan 2026",
+   "source": "payroll",
+   "ref": "PR-01",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "95000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "95000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00012",
+   "date": "2026-01-31",
+   "memo": "Payroll accrual Jan 2026",
+   "source": "accrual",
+   "ref": "PRA-01",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "22800.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "0.00",
+     "credit": "22800.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00013",
+   "date": "2026-01-31",
+   "memo": "Electricity Jan 2026",
+   "source": "ap",
+   "ref": "UTIL-202601",
+   "lines": [
+    {
+     "account": "6200",
+     "debit": "9300.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "9300.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00014",
+   "date": "2026-01-31",
+   "memo": "Telecom and security Jan 2026",
+   "source": "accrual",
+   "ref": "SEC-01",
+   "lines": [
+    {
+     "account": "6600",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2100",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00015",
+   "date": "2026-01-31",
+   "memo": "Insurance amortisation Jan 2026",
+   "source": "accrual",
+   "ref": "INS-01",
+   "lines": [
+    {
+     "account": "6800",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1300",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00016",
+   "date": "2026-01-31",
+   "memo": "Depreciation Jan 2026",
+   "source": "accrual",
+   "ref": "DEP-01",
+   "lines": [
+    {
+     "account": "6400",
+     "debit": "4000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1590",
+     "debit": "0.00",
+     "credit": "4000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00017",
+   "date": "2026-02-28",
+   "memo": "Revenue for Feb 2026",
+   "source": "ar",
+   "ref": "INV-202602",
+   "lines": [
+    {
+     "account": "1100",
+     "debit": "437000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "4000",
+     "debit": "0.00",
+     "credit": "437000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00018",
+   "date": "2026-02-26",
+   "memo": "Goods received Feb 2026",
+   "source": "ap",
+   "ref": "STK-202602",
+   "lines": [
+    {
+     "account": "1200",
+     "debit": "183540.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "183540.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00019",
+   "date": "2026-02-28",
+   "memo": "Cost of sales for Feb 2026",
+   "source": "manual",
+   "ref": "",
+   "lines": [
+    {
+     "account": "5000",
+     "debit": "183540.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1200",
+     "debit": "0.00",
+     "credit": "183540.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00020",
+   "date": "2026-02-27",
+   "memo": "Customer receipts Feb",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "1000",
+     "debit": "393300.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1100",
+     "debit": "0.00",
+     "credit": "393300.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00021",
+   "date": "2026-02-27",
+   "memo": "Payment to goods suppliers Feb",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "2000",
+     "debit": "183540.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "183540.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00022",
+   "date": "2026-02-05",
+   "memo": "Rent Feb 2026",
+   "source": "ap",
+   "ref": "RENT-02",
+   "lines": [
+    {
+     "account": "6100",
+     "debit": "45000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "45000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00023",
+   "date": "2026-02-25",
+   "memo": "Payroll Feb 2026",
+   "source": "payroll",
+   "ref": "PR-02",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "95000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "22800.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "117800.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00024",
+   "date": "2026-02-28",
+   "memo": "Payroll accrual Feb 2026",
+   "source": "accrual",
+   "ref": "PRA-02",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "11400.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "0.00",
+     "credit": "11400.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00025",
+   "date": "2026-02-28",
+   "memo": "Electricity Feb 2026",
+   "source": "ap",
+   "ref": "UTIL-202602",
+   "lines": [
+    {
+     "account": "6200",
+     "debit": "9500.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "9500.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00026",
+   "date": "2026-02-28",
+   "memo": "Telecom and security Feb 2026",
+   "source": "accrual",
+   "ref": "SEC-02",
+   "lines": [
+    {
+     "account": "6600",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2100",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00027",
+   "date": "2026-02-28",
+   "memo": "Insurance amortisation Feb 2026",
+   "source": "accrual",
+   "ref": "INS-02",
+   "lines": [
+    {
+     "account": "6800",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1300",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00028",
+   "date": "2026-02-28",
+   "memo": "Depreciation Feb 2026",
+   "source": "accrual",
+   "ref": "DEP-02",
+   "lines": [
+    {
+     "account": "6400",
+     "debit": "4000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1590",
+     "debit": "0.00",
+     "credit": "4000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00029",
+   "date": "2026-03-28",
+   "memo": "Revenue for Mar 2026",
+   "source": "ar",
+   "ref": "INV-202603",
+   "lines": [
+    {
+     "account": "1100",
+     "debit": "446000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "4000",
+     "debit": "0.00",
+     "credit": "446000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00030",
+   "date": "2026-03-26",
+   "memo": "Goods received Mar 2026",
+   "source": "ap",
+   "ref": "STK-202603",
+   "lines": [
+    {
+     "account": "1200",
+     "debit": "187320.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "187320.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00031",
+   "date": "2026-03-28",
+   "memo": "Cost of sales for Mar 2026",
+   "source": "manual",
+   "ref": "",
+   "lines": [
+    {
+     "account": "5000",
+     "debit": "187320.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1200",
+     "debit": "0.00",
+     "credit": "187320.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00032",
+   "date": "2026-03-27",
+   "memo": "Customer receipts Mar",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "1000",
+     "debit": "401400.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1100",
+     "debit": "0.00",
+     "credit": "401400.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00033",
+   "date": "2026-03-27",
+   "memo": "Payment to goods suppliers Mar",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "2000",
+     "debit": "187320.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "187320.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00034",
+   "date": "2026-03-05",
+   "memo": "Rent Mar 2026",
+   "source": "ap",
+   "ref": "RENT-03",
+   "lines": [
+    {
+     "account": "6100",
+     "debit": "45000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "45000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00035",
+   "date": "2026-03-25",
+   "memo": "Payroll Mar 2026",
+   "source": "payroll",
+   "ref": "PR-03",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "95000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "11400.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "106400.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00036",
+   "date": "2026-03-31",
+   "memo": "Payroll accrual Mar 2026",
+   "source": "accrual",
+   "ref": "PRA-03",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "22800.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "0.00",
+     "credit": "22800.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00037",
+   "date": "2026-03-31",
+   "memo": "Electricity Mar 2026",
+   "source": "ap",
+   "ref": "UTIL-202603",
+   "lines": [
+    {
+     "account": "6200",
+     "debit": "9300.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "9300.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00038",
+   "date": "2026-03-31",
+   "memo": "Telecom and security Mar 2026",
+   "source": "accrual",
+   "ref": "SEC-03",
+   "lines": [
+    {
+     "account": "6600",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2100",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00039",
+   "date": "2026-03-31",
+   "memo": "Insurance amortisation Mar 2026",
+   "source": "accrual",
+   "ref": "INS-03",
+   "lines": [
+    {
+     "account": "6800",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1300",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00040",
+   "date": "2026-03-31",
+   "memo": "Depreciation Mar 2026",
+   "source": "accrual",
+   "ref": "DEP-03",
+   "lines": [
+    {
+     "account": "6400",
+     "debit": "4000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1590",
+     "debit": "0.00",
+     "credit": "4000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00041",
+   "date": "2026-04-28",
+   "memo": "Revenue for Apr 2026",
+   "source": "ar",
+   "ref": "INV-202604",
+   "lines": [
+    {
+     "account": "1100",
+     "debit": "424000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "4000",
+     "debit": "0.00",
+     "credit": "424000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00042",
+   "date": "2026-04-26",
+   "memo": "Goods received Apr 2026",
+   "source": "ap",
+   "ref": "STK-202604",
+   "lines": [
+    {
+     "account": "1200",
+     "debit": "178080.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "178080.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00043",
+   "date": "2026-04-28",
+   "memo": "Cost of sales for Apr 2026",
+   "source": "manual",
+   "ref": "",
+   "lines": [
+    {
+     "account": "5000",
+     "debit": "178080.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1200",
+     "debit": "0.00",
+     "credit": "178080.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00044",
+   "date": "2026-04-27",
+   "memo": "Customer receipts Apr",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "1000",
+     "debit": "381600.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1100",
+     "debit": "0.00",
+     "credit": "381600.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00045",
+   "date": "2026-04-27",
+   "memo": "Payment to goods suppliers Apr",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "2000",
+     "debit": "178080.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "178080.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00046",
+   "date": "2026-04-05",
+   "memo": "Rent Apr 2026",
+   "source": "ap",
+   "ref": "RENT-04",
+   "lines": [
+    {
+     "account": "6100",
+     "debit": "45000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "45000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00047",
+   "date": "2026-04-25",
+   "memo": "Payroll Apr 2026",
+   "source": "payroll",
+   "ref": "PR-04",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "95000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "22800.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "117800.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00048",
+   "date": "2026-04-30",
+   "memo": "Payroll accrual Apr 2026",
+   "source": "accrual",
+   "ref": "PRA-04",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "19000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "0.00",
+     "credit": "19000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00049",
+   "date": "2026-04-30",
+   "memo": "Electricity Apr 2026",
+   "source": "ap",
+   "ref": "UTIL-202604",
+   "lines": [
+    {
+     "account": "6200",
+     "debit": "6300.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "6300.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00050",
+   "date": "2026-04-30",
+   "memo": "Telecom and security Apr 2026",
+   "source": "accrual",
+   "ref": "SEC-04",
+   "lines": [
+    {
+     "account": "6600",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2100",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00051",
+   "date": "2026-04-30",
+   "memo": "Insurance amortisation Apr 2026",
+   "source": "accrual",
+   "ref": "INS-04",
+   "lines": [
+    {
+     "account": "6800",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1300",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00052",
+   "date": "2026-04-30",
+   "memo": "Depreciation Apr 2026",
+   "source": "accrual",
+   "ref": "DEP-04",
+   "lines": [
+    {
+     "account": "6400",
+     "debit": "4000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1590",
+     "debit": "0.00",
+     "credit": "4000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00053",
+   "date": "2026-05-28",
+   "memo": "Revenue for May 2026",
+   "source": "ar",
+   "ref": "INV-202605",
+   "lines": [
+    {
+     "account": "1100",
+     "debit": "393000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "4000",
+     "debit": "0.00",
+     "credit": "393000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00054",
+   "date": "2026-05-26",
+   "memo": "Goods received May 2026",
+   "source": "ap",
+   "ref": "STK-202605",
+   "lines": [
+    {
+     "account": "1200",
+     "debit": "165060.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "165060.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00055",
+   "date": "2026-05-28",
+   "memo": "Cost of sales for May 2026",
+   "source": "manual",
+   "ref": "",
+   "lines": [
+    {
+     "account": "5000",
+     "debit": "165060.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1200",
+     "debit": "0.00",
+     "credit": "165060.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00056",
+   "date": "2026-05-27",
+   "memo": "Customer receipts May",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "1000",
+     "debit": "353700.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1100",
+     "debit": "0.00",
+     "credit": "353700.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00057",
+   "date": "2026-05-27",
+   "memo": "Payment to goods suppliers May",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "2000",
+     "debit": "165060.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "165060.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00058",
+   "date": "2026-05-05",
+   "memo": "Rent May 2026",
+   "source": "ap",
+   "ref": "RENT-05",
+   "lines": [
+    {
+     "account": "6100",
+     "debit": "45000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "45000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00059",
+   "date": "2026-05-25",
+   "memo": "Payroll May 2026",
+   "source": "payroll",
+   "ref": "PR-05",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "95000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "19000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "114000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00060",
+   "date": "2026-05-31",
+   "memo": "Payroll accrual May 2026",
+   "source": "accrual",
+   "ref": "PRA-05",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "22800.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "0.00",
+     "credit": "22800.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00061",
+   "date": "2026-05-31",
+   "memo": "Electricity May 2026",
+   "source": "ap",
+   "ref": "UTIL-202605",
+   "lines": [
+    {
+     "account": "6200",
+     "debit": "8400.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "8400.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00062",
+   "date": "2026-05-31",
+   "memo": "Telecom and security May 2026",
+   "source": "accrual",
+   "ref": "SEC-05",
+   "lines": [
+    {
+     "account": "6600",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2100",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00063",
+   "date": "2026-05-31",
+   "memo": "Insurance amortisation May 2026",
+   "source": "accrual",
+   "ref": "INS-05",
+   "lines": [
+    {
+     "account": "6800",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1300",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00064",
+   "date": "2026-05-31",
+   "memo": "Depreciation May 2026",
+   "source": "accrual",
+   "ref": "DEP-05",
+   "lines": [
+    {
+     "account": "6400",
+     "debit": "4000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1590",
+     "debit": "0.00",
+     "credit": "4000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00065",
+   "date": "2026-06-28",
+   "memo": "Revenue for Jun 2026",
+   "source": "ar",
+   "ref": "INV-202606",
+   "lines": [
+    {
+     "account": "1100",
+     "debit": "449000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "4000",
+     "debit": "0.00",
+     "credit": "449000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00066",
+   "date": "2026-06-26",
+   "memo": "Goods received Jun 2026",
+   "source": "ap",
+   "ref": "STK-202606",
+   "lines": [
+    {
+     "account": "1200",
+     "debit": "188580.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "188580.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00067",
+   "date": "2026-06-28",
+   "memo": "Cost of sales for Jun 2026",
+   "source": "manual",
+   "ref": "",
+   "lines": [
+    {
+     "account": "5000",
+     "debit": "188580.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1200",
+     "debit": "0.00",
+     "credit": "188580.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00068",
+   "date": "2026-06-27",
+   "memo": "Customer receipts Jun",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "1000",
+     "debit": "404100.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1100",
+     "debit": "0.00",
+     "credit": "404100.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00069",
+   "date": "2026-06-27",
+   "memo": "Payment to goods suppliers Jun",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "2000",
+     "debit": "188580.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "188580.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00070",
+   "date": "2026-06-05",
+   "memo": "Rent Jun 2026",
+   "source": "ap",
+   "ref": "RENT-06",
+   "lines": [
+    {
+     "account": "6100",
+     "debit": "45000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "45000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00071",
+   "date": "2026-06-25",
+   "memo": "Payroll Jun 2026",
+   "source": "payroll",
+   "ref": "PR-06",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "95000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "22800.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "117800.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00072",
+   "date": "2026-06-30",
+   "memo": "Payroll accrual Jun 2026",
+   "source": "accrual",
+   "ref": "PRA-06",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "19000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "0.00",
+     "credit": "19000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00073",
+   "date": "2026-06-30",
+   "memo": "Electricity Jun 2026",
+   "source": "ap",
+   "ref": "UTIL-202606",
+   "lines": [
+    {
+     "account": "6200",
+     "debit": "8100.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "8100.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00074",
+   "date": "2026-06-30",
+   "memo": "Telecom and security Jun 2026",
+   "source": "accrual",
+   "ref": "SEC-06",
+   "lines": [
+    {
+     "account": "6600",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2100",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00075",
+   "date": "2026-06-30",
+   "memo": "Insurance amortisation Jun 2026",
+   "source": "accrual",
+   "ref": "INS-06",
+   "lines": [
+    {
+     "account": "6800",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1300",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00076",
+   "date": "2026-06-30",
+   "memo": "Depreciation Jun 2026",
+   "source": "accrual",
+   "ref": "DEP-06",
+   "lines": [
+    {
+     "account": "6400",
+     "debit": "4000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1590",
+     "debit": "0.00",
+     "credit": "4000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00077",
+   "date": "2026-07-28",
+   "memo": "Revenue for Jul 2026",
+   "source": "ar",
+   "ref": "INV-202607",
+   "lines": [
+    {
+     "account": "1100",
+     "debit": "438000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "4000",
+     "debit": "0.00",
+     "credit": "438000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00078",
+   "date": "2026-07-26",
+   "memo": "Goods received Jul 2026",
+   "source": "ap",
+   "ref": "STK-202607",
+   "lines": [
+    {
+     "account": "1200",
+     "debit": "183960.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "183960.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00079",
+   "date": "2026-07-28",
+   "memo": "Cost of sales for Jul 2026",
+   "source": "manual",
+   "ref": "",
+   "lines": [
+    {
+     "account": "5000",
+     "debit": "183960.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1200",
+     "debit": "0.00",
+     "credit": "183960.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00080",
+   "date": "2026-07-27",
+   "memo": "Customer receipts Jul",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "1000",
+     "debit": "394200.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1100",
+     "debit": "0.00",
+     "credit": "394200.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00081",
+   "date": "2026-07-27",
+   "memo": "Payment to goods suppliers Jul",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "2000",
+     "debit": "183960.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "183960.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00082",
+   "date": "2026-07-05",
+   "memo": "Rent Jul 2026",
+   "source": "ap",
+   "ref": "RENT-07",
+   "lines": [
+    {
+     "account": "6100",
+     "debit": "45000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "45000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00083",
+   "date": "2026-07-25",
+   "memo": "Payroll Jul 2026",
+   "source": "payroll",
+   "ref": "PR-07",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "95000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "19000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "114000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00084",
+   "date": "2026-07-31",
+   "memo": "Payroll accrual Jul 2026",
+   "source": "accrual",
+   "ref": "PRA-07",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "22800.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "0.00",
+     "credit": "22800.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00085",
+   "date": "2026-07-31",
+   "memo": "Electricity Jul 2026",
+   "source": "ap",
+   "ref": "UTIL-202607",
+   "lines": [
+    {
+     "account": "6200",
+     "debit": "8800.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "8800.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00086",
+   "date": "2026-07-31",
+   "memo": "Telecom and security Jul 2026",
+   "source": "accrual",
+   "ref": "SEC-07",
+   "lines": [
+    {
+     "account": "6600",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2100",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00087",
+   "date": "2026-07-31",
+   "memo": "Insurance amortisation Jul 2026",
+   "source": "accrual",
+   "ref": "INS-07",
+   "lines": [
+    {
+     "account": "6800",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1300",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00088",
+   "date": "2026-07-31",
+   "memo": "Depreciation Jul 2026",
+   "source": "accrual",
+   "ref": "DEP-07",
+   "lines": [
+    {
+     "account": "6400",
+     "debit": "4000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1590",
+     "debit": "0.00",
+     "credit": "4000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00089",
+   "date": "2026-08-28",
+   "memo": "Revenue for Aug 2026",
+   "source": "ar",
+   "ref": "INV-202608",
+   "lines": [
+    {
+     "account": "1100",
+     "debit": "411000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "4000",
+     "debit": "0.00",
+     "credit": "411000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00090",
+   "date": "2026-08-26",
+   "memo": "Goods received Aug 2026",
+   "source": "ap",
+   "ref": "STK-202608",
+   "lines": [
+    {
+     "account": "1200",
+     "debit": "172620.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "172620.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00091",
+   "date": "2026-08-28",
+   "memo": "Cost of sales for Aug 2026",
+   "source": "manual",
+   "ref": "",
+   "lines": [
+    {
+     "account": "5000",
+     "debit": "172620.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1200",
+     "debit": "0.00",
+     "credit": "172620.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00092",
+   "date": "2026-08-27",
+   "memo": "Customer receipts Aug",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "1000",
+     "debit": "369900.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1100",
+     "debit": "0.00",
+     "credit": "369900.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00093",
+   "date": "2026-08-27",
+   "memo": "Payment to goods suppliers Aug",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "2000",
+     "debit": "172620.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "172620.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00094",
+   "date": "2026-08-05",
+   "memo": "Rent Aug 2026",
+   "source": "ap",
+   "ref": "RENT-08",
+   "lines": [
+    {
+     "account": "6100",
+     "debit": "45000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "45000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00095",
+   "date": "2026-08-25",
+   "memo": "Payroll Aug 2026",
+   "source": "payroll",
+   "ref": "PR-08",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "95000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "22800.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "117800.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00096",
+   "date": "2026-08-31",
+   "memo": "Payroll accrual Aug 2026",
+   "source": "accrual",
+   "ref": "PRA-08",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "22800.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "0.00",
+     "credit": "22800.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00097",
+   "date": "2026-08-31",
+   "memo": "Electricity Aug 2026",
+   "source": "ap",
+   "ref": "UTIL-202608",
+   "lines": [
+    {
+     "account": "6200",
+     "debit": "7200.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "7200.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00098",
+   "date": "2026-08-31",
+   "memo": "Telecom and security Aug 2026",
+   "source": "accrual",
+   "ref": "SEC-08",
+   "lines": [
+    {
+     "account": "6600",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2100",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00099",
+   "date": "2026-08-31",
+   "memo": "Insurance amortisation Aug 2026",
+   "source": "accrual",
+   "ref": "INS-08",
+   "lines": [
+    {
+     "account": "6800",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1300",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00100",
+   "date": "2026-08-31",
+   "memo": "Depreciation Aug 2026",
+   "source": "accrual",
+   "ref": "DEP-08",
+   "lines": [
+    {
+     "account": "6400",
+     "debit": "4000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1590",
+     "debit": "0.00",
+     "credit": "4000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00101",
+   "date": "2026-09-28",
+   "memo": "Revenue for Sep 2026",
+   "source": "ar",
+   "ref": "INV-202609",
+   "lines": [
+    {
+     "account": "1100",
+     "debit": "420000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "4000",
+     "debit": "0.00",
+     "credit": "420000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00102",
+   "date": "2026-09-28",
+   "memo": "Cost of sales for Sep 2026",
+   "source": "manual",
+   "ref": "",
+   "lines": [
+    {
+     "account": "5000",
+     "debit": "176400.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1200",
+     "debit": "0.00",
+     "credit": "176400.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00103",
+   "date": "2026-09-27",
+   "memo": "Customer receipts Sep",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "1000",
+     "debit": "378000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1100",
+     "debit": "0.00",
+     "credit": "378000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00104",
+   "date": "2026-09-05",
+   "memo": "Rent Sep 2026",
+   "source": "ap",
+   "ref": "RENT-09",
+   "lines": [
+    {
+     "account": "6100",
+     "debit": "45000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "45000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00105",
+   "date": "2026-09-25",
+   "memo": "Payroll Sep 2026",
+   "source": "payroll",
+   "ref": "PR-09",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "95000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "22800.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "117800.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00106",
+   "date": "2026-09-30",
+   "memo": "Payroll accrual Sep 2026",
+   "source": "accrual",
+   "ref": "PRA-09",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "19000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "0.00",
+     "credit": "19000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00107",
+   "date": "2026-09-30",
+   "memo": "Electricity Sep 2026",
+   "source": "ap",
+   "ref": "UTIL-202609",
+   "lines": [
+    {
+     "account": "6200",
+     "debit": "7500.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "7500.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00108",
+   "date": "2026-09-30",
+   "memo": "Telecom and security Sep 2026",
+   "source": "accrual",
+   "ref": "SEC-09",
+   "lines": [
+    {
+     "account": "6600",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2100",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00109",
+   "date": "2026-09-30",
+   "memo": "Insurance amortisation Sep 2026",
+   "source": "accrual",
+   "ref": "INS-09",
+   "lines": [
+    {
+     "account": "6800",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1300",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00110",
+   "date": "2026-09-30",
+   "memo": "Depreciation Sep 2026",
+   "source": "accrual",
+   "ref": "DEP-09",
+   "lines": [
+    {
+     "account": "6400",
+     "debit": "4000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1590",
+     "debit": "0.00",
+     "credit": "4000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00111",
+   "date": "2026-10-28",
+   "memo": "Revenue for Oct 2026",
+   "source": "ar",
+   "ref": "INV-202610",
+   "lines": [
+    {
+     "account": "1100",
+     "debit": "393000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "4000",
+     "debit": "0.00",
+     "credit": "393000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00112",
+   "date": "2026-10-26",
+   "memo": "Goods received Oct 2026",
+   "source": "ap",
+   "ref": "STK-202610",
+   "lines": [
+    {
+     "account": "1200",
+     "debit": "165060.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "165060.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00113",
+   "date": "2026-10-28",
+   "memo": "Cost of sales for Oct 2026",
+   "source": "manual",
+   "ref": "",
+   "lines": [
+    {
+     "account": "5000",
+     "debit": "165060.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1200",
+     "debit": "0.00",
+     "credit": "165060.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00114",
+   "date": "2026-10-27",
+   "memo": "Customer receipts Oct",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "1000",
+     "debit": "353700.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1100",
+     "debit": "0.00",
+     "credit": "353700.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00115",
+   "date": "2026-10-27",
+   "memo": "Payment to goods suppliers Oct",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "2000",
+     "debit": "165060.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "165060.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00116",
+   "date": "2026-10-05",
+   "memo": "Rent Oct 2026",
+   "source": "ap",
+   "ref": "RENT-10",
+   "lines": [
+    {
+     "account": "6100",
+     "debit": "45000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "45000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00117",
+   "date": "2026-10-25",
+   "memo": "Payroll Oct 2026",
+   "source": "payroll",
+   "ref": "PR-10",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "95000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "19000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "114000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00118",
+   "date": "2026-10-31",
+   "memo": "Payroll accrual Oct 2026",
+   "source": "accrual",
+   "ref": "PRA-10",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "22800.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "0.00",
+     "credit": "22800.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00119",
+   "date": "2026-10-31",
+   "memo": "Electricity Oct 2026",
+   "source": "ap",
+   "ref": "UTIL-202610",
+   "lines": [
+    {
+     "account": "6200",
+     "debit": "7200.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "7200.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00120",
+   "date": "2026-10-31",
+   "memo": "Telecom and security Oct 2026",
+   "source": "accrual",
+   "ref": "SEC-10",
+   "lines": [
+    {
+     "account": "6600",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2100",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00121",
+   "date": "2026-10-31",
+   "memo": "Insurance amortisation Oct 2026",
+   "source": "accrual",
+   "ref": "INS-10",
+   "lines": [
+    {
+     "account": "6800",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1300",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00122",
+   "date": "2026-10-31",
+   "memo": "Depreciation Oct 2026",
+   "source": "accrual",
+   "ref": "DEP-10",
+   "lines": [
+    {
+     "account": "6400",
+     "debit": "4000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1590",
+     "debit": "0.00",
+     "credit": "4000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00123",
+   "date": "2026-11-28",
+   "memo": "Revenue for Nov 2026",
+   "source": "ar",
+   "ref": "INV-202611",
+   "lines": [
+    {
+     "account": "1100",
+     "debit": "431000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "4000",
+     "debit": "0.00",
+     "credit": "431000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00124",
+   "date": "2026-11-26",
+   "memo": "Goods received Nov 2026",
+   "source": "ap",
+   "ref": "STK-202611",
+   "lines": [
+    {
+     "account": "1200",
+     "debit": "181020.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "181020.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00125",
+   "date": "2026-11-28",
+   "memo": "Cost of sales for Nov 2026",
+   "source": "manual",
+   "ref": "",
+   "lines": [
+    {
+     "account": "5000",
+     "debit": "181020.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1200",
+     "debit": "0.00",
+     "credit": "181020.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00126",
+   "date": "2026-11-27",
+   "memo": "Customer receipts Nov",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "1000",
+     "debit": "387900.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1100",
+     "debit": "0.00",
+     "credit": "387900.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00127",
+   "date": "2026-11-27",
+   "memo": "Payment to goods suppliers Nov",
+   "source": "bank",
+   "ref": "",
+   "lines": [
+    {
+     "account": "2000",
+     "debit": "181020.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "181020.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00128",
+   "date": "2026-11-05",
+   "memo": "Rent Nov 2026",
+   "source": "ap",
+   "ref": "RENT-11",
+   "lines": [
+    {
+     "account": "6100",
+     "debit": "45000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "45000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00129",
+   "date": "2026-11-25",
+   "memo": "Payroll Nov 2026",
+   "source": "payroll",
+   "ref": "PR-11",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "117800.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "117800.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00130",
+   "date": "2026-11-30",
+   "memo": "Payroll accrual Nov 2026",
+   "source": "accrual",
+   "ref": "PRA-11",
+   "lines": [
+    {
+     "account": "6000",
+     "debit": "19000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2200",
+     "debit": "0.00",
+     "credit": "19000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00131",
+   "date": "2026-11-30",
+   "memo": "Electricity Nov 2026",
+   "source": "ap",
+   "ref": "UTIL-202611",
+   "lines": [
+    {
+     "account": "6200",
+     "debit": "7200.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "7200.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00132",
+   "date": "2026-11-30",
+   "memo": "Telecom and security Nov 2026",
+   "source": "accrual",
+   "ref": "SEC-11",
+   "lines": [
+    {
+     "account": "6600",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2100",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00133",
+   "date": "2026-11-30",
+   "memo": "Insurance amortisation Nov 2026",
+   "source": "accrual",
+   "ref": "INS-11",
+   "lines": [
+    {
+     "account": "6800",
+     "debit": "13000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1300",
+     "debit": "0.00",
+     "credit": "13000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00134",
+   "date": "2026-11-08",
+   "memo": "Payment of inv. HW-7781, Technostock",
+   "source": "ap",
+   "ref": "HW-7781",
+   "lines": [
+    {
+     "account": "6900",
+     "debit": "120000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "120000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00135",
+   "date": "2026-11-16",
+   "memo": "Qubit, contract QB-88",
+   "source": "ap",
+   "ref": "QB-88",
+   "lines": [
+    {
+     "account": "6300",
+     "debit": "248000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "248000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00136",
+   "date": "2026-11-27",
+   "memo": "Torium, subcontracting certificate",
+   "source": "ap",
+   "ref": "SUB-202611-1",
+   "lines": [
+    {
+     "account": "5000",
+     "debit": "63000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "63000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00137",
+   "date": "2026-11-12",
+   "memo": "Audit-Pro, inv. AUD-114",
+   "source": "ap",
+   "ref": "AUD-114",
+   "lines": [
+    {
+     "account": "6300",
+     "debit": "31000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "31000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00138",
+   "date": "2026-11-03",
+   "memo": "Softline, inv. SW-900",
+   "source": "ap",
+   "ref": "SW-900",
+   "lines": [
+    {
+     "account": "6500",
+     "debit": "18000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "18000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00139",
+   "date": "2026-11-20",
+   "memo": "Receipt from Vector, contract ADV-51",
+   "source": "ar",
+   "ref": "ADV-51",
+   "lines": [
+    {
+     "account": "1000",
+     "debit": "135000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1100",
+     "debit": "0.00",
+     "credit": "135000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00140",
+   "date": "2026-11-15",
+   "memo": "Storeservice, contract AR-77",
+   "source": "ap",
+   "ref": "AR-77",
+   "lines": [
+    {
+     "account": "6100",
+     "debit": "31000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "31000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00141",
+   "date": "2026-11-14",
+   "memo": "Nordwerk GmbH, inv. NW-2210",
+   "source": "ap",
+   "ref": "NW-2210",
+   "lines": [
+    {
+     "account": "5000",
+     "debit": "217954.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "217954.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00142",
+   "date": "2026-11-24",
+   "memo": "Settlement of NW-2210",
+   "source": "bank",
+   "ref": "NW-2210",
+   "lines": [
+    {
+     "account": "2000",
+     "debit": "217954.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "217954.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00143",
+   "date": "2026-11-11",
+   "memo": "Payment of inv. ML-330, Mechline",
+   "source": "manual",
+   "ref": "ML-330",
+   "lines": [
+    {
+     "account": "1500",
+     "debit": "297000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "297000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00144",
+   "date": "2026-11-30",
+   "memo": "Depreciation of FA-221 for 20 days",
+   "source": "accrual",
+   "ref": "ML-330",
+   "lines": [
+    {
+     "account": "6400",
+     "debit": "3300.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1590",
+     "debit": "0.00",
+     "credit": "3300.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00145",
+   "date": "2026-11-07",
+   "memo": "Cleanservice, inv. CS-401",
+   "source": "ap",
+   "ref": "CS-401",
+   "lines": [
+    {
+     "account": "6900",
+     "debit": "17000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "17000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00146",
+   "date": "2026-11-21",
+   "memo": "Cleanservice, inv. CS-402",
+   "source": "ap",
+   "ref": "CS-402",
+   "lines": [
+    {
+     "account": "6900",
+     "debit": "17000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "2000",
+     "debit": "0.00",
+     "credit": "17000.00"
+    }
+   ]
+  },
+  {
+   "eid": "JE00147",
+   "date": "2026-11-11",
+   "memo": "Promtech, inv. PT-55",
+   "source": "ap",
+   "ref": "PT-55",
+   "lines": [
+    {
+     "account": "6900",
+     "debit": "85000.00",
+     "credit": "0.00"
+    },
+    {
+     "account": "1000",
+     "debit": "0.00",
+     "credit": "85000.00"
+    }
+   ]
+  }
+ ],
+ "documents": [
+  {
+   "doc_id": "UTIL-202601",
+   "kind": "vendor_invoice",
+   "date": "2026-01-31",
+   "title": "Electricity invoice, Jan 2026, Gridpower Utilities",
+   "body": "Period: Jan 2026\nTariff: commercial C2\nConsumption: 1328 kWh\nAmount due: 9300.00",
+   "meta": {
+    "vendor": "Gridpower Utilities",
+    "amount": "9300.00"
+   }
+  },
+  {
+   "doc_id": "UTIL-202602",
+   "kind": "vendor_invoice",
+   "date": "2026-02-28",
+   "title": "Electricity invoice, Feb 2026, Gridpower Utilities",
+   "body": "Period: Feb 2026\nTariff: commercial C2\nConsumption: 1357 kWh\nAmount due: 9500.00",
+   "meta": {
+    "vendor": "Gridpower Utilities",
+    "amount": "9500.00"
+   }
+  },
+  {
+   "doc_id": "UTIL-202603",
+   "kind": "vendor_invoice",
+   "date": "2026-03-31",
+   "title": "Electricity invoice, Mar 2026, Gridpower Utilities",
+   "body": "Period: Mar 2026\nTariff: commercial C2\nConsumption: 1328 kWh\nAmount due: 9300.00",
+   "meta": {
+    "vendor": "Gridpower Utilities",
+    "amount": "9300.00"
+   }
+  },
+  {
+   "doc_id": "UTIL-202604",
+   "kind": "vendor_invoice",
+   "date": "2026-04-30",
+   "title": "Electricity invoice, Apr 2026, Gridpower Utilities",
+   "body": "Period: Apr 2026\nTariff: commercial C2\nConsumption: 900 kWh\nAmount due: 6300.00",
+   "meta": {
+    "vendor": "Gridpower Utilities",
+    "amount": "6300.00"
+   }
+  },
+  {
+   "doc_id": "UTIL-202605",
+   "kind": "vendor_invoice",
+   "date": "2026-05-31",
+   "title": "Electricity invoice, May 2026, Gridpower Utilities",
+   "body": "Period: May 2026\nTariff: commercial C2\nConsumption: 1200 kWh\nAmount due: 8400.00",
+   "meta": {
+    "vendor": "Gridpower Utilities",
+    "amount": "8400.00"
+   }
+  },
+  {
+   "doc_id": "UTIL-202606",
+   "kind": "vendor_invoice",
+   "date": "2026-06-30",
+   "title": "Electricity invoice, Jun 2026, Gridpower Utilities",
+   "body": "Period: Jun 2026\nTariff: commercial C2\nConsumption: 1157 kWh\nAmount due: 8100.00",
+   "meta": {
+    "vendor": "Gridpower Utilities",
+    "amount": "8100.00"
+   }
+  },
+  {
+   "doc_id": "UTIL-202607",
+   "kind": "vendor_invoice",
+   "date": "2026-07-31",
+   "title": "Electricity invoice, Jul 2026, Gridpower Utilities",
+   "body": "Period: Jul 2026\nTariff: commercial C2\nConsumption: 1257 kWh\nAmount due: 8800.00",
+   "meta": {
+    "vendor": "Gridpower Utilities",
+    "amount": "8800.00"
+   }
+  },
+  {
+   "doc_id": "UTIL-202608",
+   "kind": "vendor_invoice",
+   "date": "2026-08-31",
+   "title": "Electricity invoice, Aug 2026, Gridpower Utilities",
+   "body": "Period: Aug 2026\nTariff: commercial C2\nConsumption: 1028 kWh\nAmount due: 7200.00",
+   "meta": {
+    "vendor": "Gridpower Utilities",
+    "amount": "7200.00"
+   }
+  },
+  {
+   "doc_id": "UTIL-202609",
+   "kind": "vendor_invoice",
+   "date": "2026-09-30",
+   "title": "Electricity invoice, Sep 2026, Gridpower Utilities",
+   "body": "Period: Sep 2026\nTariff: commercial C2\nConsumption: 1071 kWh\nAmount due: 7500.00",
+   "meta": {
+    "vendor": "Gridpower Utilities",
+    "amount": "7500.00"
+   }
+  },
+  {
+   "doc_id": "UTIL-202610",
+   "kind": "vendor_invoice",
+   "date": "2026-10-31",
+   "title": "Electricity invoice, Oct 2026, Gridpower Utilities",
+   "body": "Period: Oct 2026\nTariff: commercial C2\nConsumption: 1028 kWh\nAmount due: 7200.00",
+   "meta": {
+    "vendor": "Gridpower Utilities",
+    "amount": "7200.00"
+   }
+  },
+  {
+   "doc_id": "UTIL-202611",
+   "kind": "vendor_invoice",
+   "date": "2026-11-30",
+   "title": "Electricity invoice, Nov 2026, Gridpower Utilities",
+   "body": "Period: Nov 2026\nTariff: commercial C2\nConsumption: 1028 kWh\nAmount due: 7200.00",
+   "meta": {
+    "vendor": "Gridpower Utilities",
+    "amount": "7200.00"
+   }
+  },
+  {
+   "doc_id": "HW-7781",
+   "kind": "vendor_invoice",
+   "date": "2026-11-08",
+   "title": "Invoice from Technostock Ltd, HW-7781",
+   "body": "Server equipment, useful life 5 years\nCost: 120000.00\nFixed asset, inventory no. FA-114\nCommissioning date: 2026-12-01",
+   "meta": {
+    "vendor": "Technostock Ltd",
+    "amount": "120000.00"
+   }
+  },
+  {
+   "doc_id": "QB-88",
+   "kind": "contract",
+   "date": "2026-11-16",
+   "title": "Support agreement QB-88 (Qubit Ltd)",
+   "body": "Service period: 2026-11-16 to 2027-01-14 (60 calendar days)\nCost: 248000.00, paid upfront in a single instalment\nServices are rendered evenly over the contract term.",
+   "meta": {
+    "vendor": "Qubit Ltd",
+    "amount": "248000.00"
+   }
+  },
+  {
+   "doc_id": "SUB-202611-1",
+   "kind": "vendor_invoice",
+   "date": "2026-11-27",
+   "title": "Contractor invoice, Torium Ltd",
+   "body": "Certificate of completed work for Nov 2026\nSubcontracting services\nAmount due: 63000.00",
+   "meta": {
+    "vendor": "Torium Ltd",
+    "amount": "63000.00"
+   }
+  },
+  {
+   "doc_id": "AUD-114",
+   "kind": "vendor_invoice",
+   "date": "2026-11-10",
+   "title": "Invoice from Audit-Pro Ltd, AUD-114",
+   "body": "Audit services for Q3\nAmount due: 31000.00\nInvoice number: AUD-114",
+   "meta": {
+    "vendor": "Audit-Pro Ltd",
+    "amount": "31000.00"
+   }
+  },
+  {
+   "doc_id": "SW-900",
+   "kind": "contract",
+   "date": "2026-11-03",
+   "title": "Software licence agreement SW-900",
+   "body": "Term: 1 month (Nov 2026)\nCost: 18000.00\nBilled monthly in arrears.",
+   "meta": {
+    "vendor": "Softline Ltd",
+    "amount": "18000.00"
+   }
+  },
+  {
+   "doc_id": "ADV-51",
+   "kind": "contract",
+   "date": "2026-11-20",
+   "title": "Contract with Vector Ltd, ADV-51",
+   "body": "Payment: 135000.00 for services rendered in Nov 2026\nCertificate signed 2026-11-18; revenue recognised earlier.",
+   "meta": {
+    "customer": "Vector Ltd",
+    "amount": "135000.00"
+   }
+  },
+  {
+   "doc_id": "AR-77",
+   "kind": "contract",
+   "date": "2026-11-15",
+   "title": "Warehouse lease agreement AR-77",
+   "body": "Subject: lease of a 400 sq m warehouse\nRent for Nov 2026: 31000.00",
+   "meta": {
+    "vendor": "Storeservice Ltd",
+    "amount": "31000.00"
+   }
+  },
+  {
+   "doc_id": "IC-202611",
+   "kind": "email",
+   "date": "2026-11-29",
+   "title": "Email from subsidiary: intercompany reconciliation",
+   "body": "Colleagues, we have reconciled the balances for Nov 2026: no discrepancies, no mutual obligations outstanding at period end.",
+   "meta": {}
+  },
+  {
+   "doc_id": "NW-2210",
+   "kind": "vendor_invoice",
+   "date": "2026-11-14",
+   "title": "Invoice from Nordwerk GmbH, NW-2210",
+   "body": "Delivery of components\nAmount: EUR 2200.00\nThe liability was translated at rate 99.07 and settled on 2026-11-24 at the same rate.",
+   "meta": {
+    "vendor": "Nordwerk GmbH",
+    "currency": "EUR",
+    "amount_eur": "2200.00"
+   }
+  },
+  {
+   "doc_id": "FX-202611",
+   "kind": "policy",
+   "date": "2026-11-30",
+   "title": "Exchange rate notice",
+   "body": "EUR rate on 2026-11-14: 99.07\nEUR rate on 2026-11-30: 99.07\nNo foreign-currency liabilities outstanding at the reporting date.",
+   "meta": {}
+  },
+  {
+   "doc_id": "ML-330",
+   "kind": "vendor_invoice",
+   "date": "2026-11-11",
+   "title": "Invoice from Mechline Ltd, ML-330",
+   "body": "Packaging line, inventory no. FA-221\nCost: 297000.00\nUseful life: 5 years\nCommissioned: 2026-11-11 (acceptance certificate signed)",
+   "meta": {
+    "vendor": "Mechline Ltd",
+    "amount": "297000.00"
+   }
+  },
+  {
+   "doc_id": "CS-401",
+   "kind": "vendor_invoice",
+   "date": "2026-11-07",
+   "title": "Invoice from Cleanservice Ltd, CS-401",
+   "body": "Office cleaning, first half of Nov 2026\nAmount due: 17000.00\nThe contract provides for two certificates per month.",
+   "meta": {
+    "vendor": "Cleanservice Ltd",
+    "amount": "17000.00"
+   }
+  },
+  {
+   "doc_id": "CS-402",
+   "kind": "vendor_invoice",
+   "date": "2026-11-07",
+   "title": "Invoice from Cleanservice Ltd, CS-402",
+   "body": "Office cleaning, second half of Nov 2026\nAmount due: 17000.00\nThe contract provides for two certificates per month.",
+   "meta": {
+    "vendor": "Cleanservice Ltd",
+    "amount": "17000.00"
+   }
+  },
+  {
+   "doc_id": "PT-55",
+   "kind": "vendor_invoice",
+   "date": "2026-11-11",
+   "title": "Invoice from Promtech Ltd, PT-55",
+   "body": "Consumables and components (useful life under 12 months)\nAmount due: 85000.00\nNot a fixed asset: unit cost below the capitalisation threshold.",
+   "meta": {
+    "vendor": "Promtech Ltd",
+    "amount": "85000.00"
+   }
+  },
+  {
+   "doc_id": "POL-01",
+   "kind": "policy",
+   "date": "2026-01-01",
+   "title": "Accounting policy (extract)",
+   "body": "1. Depreciation is charged on a straight-line basis from the day the asset is commissioned, inclusive, pro rata to the number of days in the month.\n2. Salaries are paid on the 25th for the 1st to the 25th; the remaining days of the month (in Nov 2026 — 5 days) are accrued at month end and released with the next payroll run.\n3. Expenses under contracts that span the period end are allocated evenly by calendar day.\n4. Outstanding foreign-currency liabilities are revalued at the reporting-date rate; the difference is charged to foreign exchange differences.\n5. Fixed-asset capitalisation threshold: 50,000. Below the threshold — expense of the period.\n6. Prepaid expenses (insurance policy) are amortised in equal monthly instalments over the policy term.\n7. The payroll accrual is released with the next payroll run.\n8. Closing adjustments are posted on the last day of the period, including corrections of omissions in prior months of the current year.",
+   "meta": {}
+  },
+  {
+   "doc_id": "BANK-202611",
+   "kind": "bank_statement",
+   "date": "2026-11-30",
+   "title": "Bank statement for Nov 2026",
+   "body": "Closing balance per statement: 1592606.00\nIncludes a debit: account maintenance fee 8000.00 (2026-11-30)",
+   "meta": {}
+  }
+ ]
+}

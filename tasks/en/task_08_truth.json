@@ -1,0 +1,160 @@
+{
+ "errors": [
+  {
+   "err_id": "E1",
+   "kind": "unrecorded_invoice",
+   "description": "Contractor invoice SUB for 71000 not recorded: cost of sales and payables understated",
+   "entry_ids": [],
+   "accounts": [
+    "5000",
+    "2000"
+   ],
+   "amount": "71000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "5000",
+    "credit_account": "2000",
+    "amount": "71000.00"
+   }
+  },
+  {
+   "err_id": "E2",
+   "kind": "duplicate_invoice",
+   "description": "Invoice AUD-114 posted twice (JE00134 and JE00135): expenses and payables overstated by 43500",
+   "entry_ids": [
+    "JE00134",
+    "JE00135"
+   ],
+   "accounts": [
+    "6300",
+    "2000"
+   ],
+   "amount": "43500.00",
+   "fix": {
+    "type": "require_reversal",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "2000",
+    "credit_account": "6300",
+    "amount": "43500.00"
+   }
+  },
+  {
+   "err_id": "E3",
+   "kind": "capex_expensed",
+   "description": "Equipment costing 245000 with a 5-year useful life charged to other expenses instead of fixed assets",
+   "entry_ids": [
+    "JE00136"
+   ],
+   "accounts": [
+    "6900",
+    "1500"
+   ],
+   "amount": "245000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1500",
+    "credit_account": "6900",
+    "amount": "245000.00"
+   }
+  },
+  {
+   "err_id": "E4",
+   "kind": "prepaid_not_deferred",
+   "description": "Annual licence 96000 expensed in full; only 8000 belongs to the period",
+   "entry_ids": [
+    "JE00137"
+   ],
+   "accounts": [
+    "6500",
+    "1300"
+   ],
+   "amount": "88000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1300",
+    "credit_account": "6500",
+    "amount": "88000.00"
+   }
+  },
+  {
+   "err_id": "E12",
+   "kind": "service_span_cutoff",
+   "description": "Contract QB-88 for 268000 over 60 days expensed in full; 15 days fall in the period, 201000.00 to be deferred",
+   "entry_ids": [
+    "JE00138"
+   ],
+   "accounts": [
+    "1300",
+    "6300"
+   ],
+   "amount": "201000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1300",
+    "credit_account": "6300",
+    "amount": "201000.00"
+   }
+  },
+  {
+   "err_id": "E13",
+   "kind": "payroll_cutoff",
+   "description": "Payroll accrual for 6 days (25200) not booked for May 2026; booked in every other month",
+   "entry_ids": [],
+   "accounts": [
+    "6000",
+    "2200"
+   ],
+   "amount": "25200.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6000",
+    "credit_account": "2200",
+    "amount": "25200.00"
+   }
+  },
+  {
+   "err_id": "E17",
+   "kind": "inventory_receipt_gap",
+   "description": "Goods receipt for Aug 2026 of 167160 not recorded although cost of sales was booked: inventory and payables understated",
+   "entry_ids": [],
+   "accounts": [
+    "1200",
+    "2000"
+   ],
+   "amount": "167160.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1200",
+    "credit_account": "2000",
+    "amount": "167160.00"
+   }
+  }
+ ]
+}

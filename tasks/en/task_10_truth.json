@@ -1,0 +1,181 @@
+{
+ "errors": [
+  {
+   "err_id": "E1",
+   "kind": "unrecorded_invoice",
+   "description": "Contractor invoice SUB for 59000 not recorded: cost of sales and payables understated",
+   "entry_ids": [],
+   "accounts": [
+    "5000",
+    "2000"
+   ],
+   "amount": "59000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "5000",
+    "credit_account": "2000",
+    "amount": "59000.00"
+   }
+  },
+  {
+   "err_id": "E2",
+   "kind": "duplicate_invoice",
+   "description": "Invoice AUD-114 posted twice (JE00135 and JE00136): expenses and payables overstated by 32000",
+   "entry_ids": [
+    "JE00135",
+    "JE00136"
+   ],
+   "accounts": [
+    "6300",
+    "2000"
+   ],
+   "amount": "32000.00",
+   "fix": {
+    "type": "require_reversal",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "2000",
+    "credit_account": "6300",
+    "amount": "32000.00"
+   }
+  },
+  {
+   "err_id": "E4",
+   "kind": "prepaid_not_deferred",
+   "description": "Annual licence 120000 expensed in full; only 10000 belongs to the period",
+   "entry_ids": [
+    "JE00137"
+   ],
+   "accounts": [
+    "6500",
+    "1300"
+   ],
+   "amount": "110000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1300",
+    "credit_account": "6500",
+    "amount": "110000.00"
+   }
+  },
+  {
+   "err_id": "E8",
+   "kind": "intercompany_mismatch",
+   "description": "Intercompany services 60000 not recorded: consolidation mismatch",
+   "entry_ids": [],
+   "accounts": [
+    "6900",
+    "2500"
+   ],
+   "amount": "60000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6900",
+    "credit_account": "2500",
+    "amount": "60000.00"
+   }
+  },
+  {
+   "err_id": "E10",
+   "kind": "fx_revaluation",
+   "description": "Foreign-currency payable EUR 1800 not revalued: rate rose from 98.41 to 102.72, difference 7758.0000",
+   "entry_ids": [
+    "JE00138"
+   ],
+   "accounts": [
+    "6700",
+    "2000"
+   ],
+   "amount": "7758.0000",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6700",
+    "credit_account": "2000",
+    "amount": "7758.0000"
+   }
+  },
+  {
+   "err_id": "E11",
+   "kind": "depreciation_prorata",
+   "description": "Fixed asset 306000 commissioned 2026-11-11; depreciation for 20 days (3400) not charged",
+   "entry_ids": [
+    "JE00139"
+   ],
+   "accounts": [
+    "6400",
+    "1590"
+   ],
+   "amount": "3400",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6400",
+    "credit_account": "1590",
+    "amount": "3400"
+   }
+  },
+  {
+   "err_id": "E14",
+   "kind": "depreciation_stopped",
+   "description": "Depreciation 4000 not charged for Feb 2026; the DEP series is broken",
+   "entry_ids": [],
+   "accounts": [
+    "6400",
+    "1590"
+   ],
+   "amount": "4000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6400",
+    "credit_account": "1590",
+    "amount": "4000.00"
+   }
+  },
+  {
+   "err_id": "E15",
+   "kind": "prepaid_amort_stopped",
+   "description": "Annual insurance amortisation 10500 not posted for Oct 2026; prepaid balance overstated",
+   "entry_ids": [],
+   "accounts": [
+    "6800",
+    "1300"
+   ],
+   "amount": "10500.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6800",
+    "credit_account": "1300",
+    "amount": "10500.00"
+   }
+  }
+ ]
+}

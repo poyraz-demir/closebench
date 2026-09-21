@@ -1,0 +1,178 @@
+{
+ "errors": [
+  {
+   "err_id": "E1",
+   "kind": "unrecorded_invoice",
+   "description": "Contractor invoice SUB for 61000 not recorded: cost of sales and payables understated",
+   "entry_ids": [],
+   "accounts": [
+    "5000",
+    "2000"
+   ],
+   "amount": "61000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "5000",
+    "credit_account": "2000",
+    "amount": "61000.00"
+   }
+  },
+  {
+   "err_id": "E3",
+   "kind": "capex_expensed",
+   "description": "Equipment costing 90000 with a 5-year useful life charged to other expenses instead of fixed assets",
+   "entry_ids": [
+    "JE00135"
+   ],
+   "accounts": [
+    "6900",
+    "1500"
+   ],
+   "amount": "90000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1500",
+    "credit_account": "6900",
+    "amount": "90000.00"
+   }
+  },
+  {
+   "err_id": "E6",
+   "kind": "unrecorded_bank_fee",
+   "description": "Bank fee 4050 appears on the statement but is not recorded",
+   "entry_ids": [],
+   "accounts": [
+    "6900",
+    "1000"
+   ],
+   "amount": "4050.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6900",
+    "credit_account": "1000",
+    "amount": "4050.00"
+   }
+  },
+  {
+   "err_id": "E9",
+   "kind": "missing_recurring",
+   "description": "Telecom and security accrual 15500 missing for Sep 2026; present in every other month of the year",
+   "entry_ids": [],
+   "accounts": [
+    "6600",
+    "2100"
+   ],
+   "amount": "15500.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6600",
+    "credit_account": "2100",
+    "amount": "15500.00"
+   }
+  },
+  {
+   "err_id": "E11",
+   "kind": "depreciation_prorata",
+   "description": "Fixed asset 180000 commissioned 2026-11-11; depreciation for 20 days (2000) not charged",
+   "entry_ids": [
+    "JE00136"
+   ],
+   "accounts": [
+    "6400",
+    "1590"
+   ],
+   "amount": "2000",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6400",
+    "credit_account": "1590",
+    "amount": "2000"
+   }
+  },
+  {
+   "err_id": "E12",
+   "kind": "service_span_cutoff",
+   "description": "Contract QB-88 for 224000 over 60 days expensed in full; 15 days fall in the period, 168000.00 to be deferred",
+   "entry_ids": [
+    "JE00137"
+   ],
+   "accounts": [
+    "1300",
+    "6300"
+   ],
+   "amount": "168000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1300",
+    "credit_account": "6300",
+    "amount": "168000.00"
+   }
+  },
+  {
+   "err_id": "E15",
+   "kind": "prepaid_amort_stopped",
+   "description": "Annual insurance amortisation 11000 not posted for Jul 2026; prepaid balance overstated",
+   "entry_ids": [],
+   "accounts": [
+    "6800",
+    "1300"
+   ],
+   "amount": "11000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6800",
+    "credit_account": "1300",
+    "amount": "11000.00"
+   }
+  },
+  {
+   "err_id": "E16",
+   "kind": "accrual_not_released",
+   "description": "On the Oct 2026 payroll run the prior month's accrual 18200 was not released: the full amount went to expense, liability 2200 left hanging",
+   "entry_ids": [],
+   "accounts": [
+    "2200",
+    "6000"
+   ],
+   "amount": "18200.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "2200",
+    "credit_account": "6000",
+    "amount": "18200.00"
+   }
+  }
+ ]
+}

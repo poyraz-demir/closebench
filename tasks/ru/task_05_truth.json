@@ -1,0 +1,176 @@
+{
+ "errors": [
+  {
+   "err_id": "E1",
+   "kind": "unrecorded_invoice",
+   "description": "Счёт подрядчика SUB на 52000 не проведён: занижены себестоимость и кредиторка",
+   "entry_ids": [],
+   "accounts": [
+    "5000",
+    "2000"
+   ],
+   "amount": "52000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "5000",
+    "credit_account": "2000",
+    "amount": "52000.00"
+   }
+  },
+  {
+   "err_id": "E9",
+   "kind": "missing_recurring",
+   "description": "Начисление «связь и охрана» 13000 отсутствует за 09.2026; во всех прочих месяцах года оно есть",
+   "entry_ids": [],
+   "accounts": [
+    "6600",
+    "2100"
+   ],
+   "amount": "13000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6600",
+    "credit_account": "2100",
+    "amount": "13000.00"
+   }
+  },
+  {
+   "err_id": "E11",
+   "kind": "depreciation_prorata",
+   "description": "ОС 333000 введено 2026-11-11, амортизация за 20 дней (3700) не начислена",
+   "entry_ids": [
+    "JE00132"
+   ],
+   "accounts": [
+    "6400",
+    "1590"
+   ],
+   "amount": "3700",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6400",
+    "credit_account": "1590",
+    "amount": "3700"
+   }
+  },
+  {
+   "err_id": "E12",
+   "kind": "service_span_cutoff",
+   "description": "Договор QB-88 на 292000 за 60 дней списан целиком; в периоде 15 дней, к переносу 219000.00",
+   "entry_ids": [
+    "JE00133"
+   ],
+   "accounts": [
+    "1300",
+    "6300"
+   ],
+   "amount": "219000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1300",
+    "credit_account": "6300",
+    "amount": "219000.00"
+   }
+  },
+  {
+   "err_id": "E13",
+   "kind": "payroll_cutoff",
+   "description": "Резерв по зарплате за 6 дней (23280) не начислен за 05.2026; во всех прочих месяцах начислялся",
+   "entry_ids": [],
+   "accounts": [
+    "6000",
+    "2200"
+   ],
+   "amount": "23280.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6000",
+    "credit_account": "2200",
+    "amount": "23280.00"
+   }
+  },
+  {
+   "err_id": "E14",
+   "kind": "depreciation_stopped",
+   "description": "Амортизация 4000 не начислена за 02.2026; ряд DEP рвётся",
+   "entry_ids": [],
+   "accounts": [
+    "6400",
+    "1590"
+   ],
+   "amount": "4000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6400",
+    "credit_account": "1590",
+    "amount": "4000.00"
+   }
+  },
+  {
+   "err_id": "E16",
+   "kind": "accrual_not_released",
+   "description": "При выплате за 03.2026 резерв прошлого месяца 11640 не погашен: вся сумма ушла в расход, обязательство 2200 зависло",
+   "entry_ids": [],
+   "accounts": [
+    "2200",
+    "6000"
+   ],
+   "amount": "11640.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "2200",
+    "credit_account": "6000",
+    "amount": "11640.00"
+   }
+  },
+  {
+   "err_id": "E17",
+   "kind": "inventory_receipt_gap",
+   "description": "Поступление товара за 08.2026 на 163800 не проведено, хотя себестоимость списана: запасы и кредиторка занижены",
+   "entry_ids": [],
+   "accounts": [
+    "1200",
+    "2000"
+   ],
+   "amount": "163800.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1200",
+    "credit_account": "2000",
+    "amount": "163800.00"
+   }
+  }
+ ]
+}

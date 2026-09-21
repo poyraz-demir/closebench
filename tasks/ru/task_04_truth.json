@@ -1,0 +1,164 @@
+{
+ "errors": [
+  {
+   "err_id": "E2",
+   "kind": "duplicate_invoice",
+   "description": "Счёт AUD-114 проведён дважды (JE00137 и JE00138): завышены расходы и кредиторка на 17500",
+   "entry_ids": [
+    "JE00137",
+    "JE00138"
+   ],
+   "accounts": [
+    "6300",
+    "2000"
+   ],
+   "amount": "17500.00",
+   "fix": {
+    "type": "require_reversal",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "2000",
+    "credit_account": "6300",
+    "amount": "17500.00"
+   }
+  },
+  {
+   "err_id": "E3",
+   "kind": "capex_expensed",
+   "description": "Оборудование на 255000 со сроком службы 5 лет списано в прочие расходы вместо ОС",
+   "entry_ids": [
+    "JE00139"
+   ],
+   "accounts": [
+    "6900",
+    "1500"
+   ],
+   "amount": "255000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1500",
+    "credit_account": "6900",
+    "amount": "255000.00"
+   }
+  },
+  {
+   "err_id": "E4",
+   "kind": "prepaid_not_deferred",
+   "description": "Годовая лицензия 108000 списана целиком; в периоде должно остаться 9000",
+   "entry_ids": [
+    "JE00140"
+   ],
+   "accounts": [
+    "6500",
+    "1300"
+   ],
+   "amount": "99000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1300",
+    "credit_account": "6500",
+    "amount": "99000.00"
+   }
+  },
+  {
+   "err_id": "E7",
+   "kind": "misclassified_expense",
+   "description": "Аренда склада 20000 отнесена на профуслуги (6300) вместо аренды (6100)",
+   "entry_ids": [
+    "JE00141"
+   ],
+   "accounts": [
+    "6300",
+    "6100"
+   ],
+   "amount": "20000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6100",
+    "credit_account": "6300",
+    "amount": "20000.00"
+   }
+  },
+  {
+   "err_id": "E8",
+   "kind": "intercompany_mismatch",
+   "description": "Межкомпанийные услуги 67000 не отражены: расхождение при консолидации",
+   "entry_ids": [],
+   "accounts": [
+    "6900",
+    "2500"
+   ],
+   "amount": "67000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6900",
+    "credit_account": "2500",
+    "amount": "67000.00"
+   }
+  },
+  {
+   "err_id": "E10",
+   "kind": "fx_revaluation",
+   "description": "Валютная кредиторка EUR 1700 не переоценена: курс вырос с 99.34 до 103.44, разница 6970.0000",
+   "entry_ids": [
+    "JE00142"
+   ],
+   "accounts": [
+    "6700",
+    "2000"
+   ],
+   "amount": "6970.0000",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6700",
+    "credit_account": "2000",
+    "amount": "6970.0000"
+   }
+  },
+  {
+   "err_id": "E12",
+   "kind": "service_span_cutoff",
+   "description": "Договор QB-88 на 168000 за 60 дней списан целиком; в периоде 15 дней, к переносу 126000.00",
+   "entry_ids": [
+    "JE00143"
+   ],
+   "accounts": [
+    "1300",
+    "6300"
+   ],
+   "amount": "126000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1300",
+    "credit_account": "6300",
+    "amount": "126000.00"
+   }
+  }
+ ]
+}

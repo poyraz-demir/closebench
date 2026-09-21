@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+
+# Local session state and measurement runs (not part of the package)
+runs/session_*.json
+runs/result*.json
+
+# Backups of earlier world versions
+closebench/*.v1
+closebench/*.v2
+
+# Editors
+.vscode/
+.idea/
+*.swp

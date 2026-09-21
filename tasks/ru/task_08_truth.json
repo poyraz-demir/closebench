@@ -1,0 +1,160 @@
+{
+ "errors": [
+  {
+   "err_id": "E1",
+   "kind": "unrecorded_invoice",
+   "description": "Счёт подрядчика SUB на 71000 не проведён: занижены себестоимость и кредиторка",
+   "entry_ids": [],
+   "accounts": [
+    "5000",
+    "2000"
+   ],
+   "amount": "71000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "5000",
+    "credit_account": "2000",
+    "amount": "71000.00"
+   }
+  },
+  {
+   "err_id": "E2",
+   "kind": "duplicate_invoice",
+   "description": "Счёт AUD-114 проведён дважды (JE00134 и JE00135): завышены расходы и кредиторка на 43500",
+   "entry_ids": [
+    "JE00134",
+    "JE00135"
+   ],
+   "accounts": [
+    "6300",
+    "2000"
+   ],
+   "amount": "43500.00",
+   "fix": {
+    "type": "require_reversal",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "2000",
+    "credit_account": "6300",
+    "amount": "43500.00"
+   }
+  },
+  {
+   "err_id": "E3",
+   "kind": "capex_expensed",
+   "description": "Оборудование на 245000 со сроком службы 5 лет списано в прочие расходы вместо ОС",
+   "entry_ids": [
+    "JE00136"
+   ],
+   "accounts": [
+    "6900",
+    "1500"
+   ],
+   "amount": "245000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1500",
+    "credit_account": "6900",
+    "amount": "245000.00"
+   }
+  },
+  {
+   "err_id": "E4",
+   "kind": "prepaid_not_deferred",
+   "description": "Годовая лицензия 96000 списана целиком; в периоде должно остаться 8000",
+   "entry_ids": [
+    "JE00137"
+   ],
+   "accounts": [
+    "6500",
+    "1300"
+   ],
+   "amount": "88000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1300",
+    "credit_account": "6500",
+    "amount": "88000.00"
+   }
+  },
+  {
+   "err_id": "E12",
+   "kind": "service_span_cutoff",
+   "description": "Договор QB-88 на 268000 за 60 дней списан целиком; в периоде 15 дней, к переносу 201000.00",
+   "entry_ids": [
+    "JE00138"
+   ],
+   "accounts": [
+    "1300",
+    "6300"
+   ],
+   "amount": "201000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1300",
+    "credit_account": "6300",
+    "amount": "201000.00"
+   }
+  },
+  {
+   "err_id": "E13",
+   "kind": "payroll_cutoff",
+   "description": "Резерв по зарплате за 6 дней (25200) не начислен за 05.2026; во всех прочих месяцах начислялся",
+   "entry_ids": [],
+   "accounts": [
+    "6000",
+    "2200"
+   ],
+   "amount": "25200.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6000",
+    "credit_account": "2200",
+    "amount": "25200.00"
+   }
+  },
+  {
+   "err_id": "E17",
+   "kind": "inventory_receipt_gap",
+   "description": "Поступление товара за 08.2026 на 167160 не проведено, хотя себестоимость списана: запасы и кредиторка занижены",
+   "entry_ids": [],
+   "accounts": [
+    "1200",
+    "2000"
+   ],
+   "amount": "167160.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1200",
+    "credit_account": "2000",
+    "amount": "167160.00"
+   }
+  }
+ ]
+}

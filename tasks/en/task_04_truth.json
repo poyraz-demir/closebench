@@ -1,0 +1,164 @@
+{
+ "errors": [
+  {
+   "err_id": "E2",
+   "kind": "duplicate_invoice",
+   "description": "Invoice AUD-114 posted twice (JE00137 and JE00138): expenses and payables overstated by 17500",
+   "entry_ids": [
+    "JE00137",
+    "JE00138"
+   ],
+   "accounts": [
+    "6300",
+    "2000"
+   ],
+   "amount": "17500.00",
+   "fix": {
+    "type": "require_reversal",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "2000",
+    "credit_account": "6300",
+    "amount": "17500.00"
+   }
+  },
+  {
+   "err_id": "E3",
+   "kind": "capex_expensed",
+   "description": "Equipment costing 255000 with a 5-year useful life charged to other expenses instead of fixed assets",
+   "entry_ids": [
+    "JE00139"
+   ],
+   "accounts": [
+    "6900",
+    "1500"
+   ],
+   "amount": "255000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1500",
+    "credit_account": "6900",
+    "amount": "255000.00"
+   }
+  },
+  {
+   "err_id": "E4",
+   "kind": "prepaid_not_deferred",
+   "description": "Annual licence 108000 expensed in full; only 9000 belongs to the period",
+   "entry_ids": [
+    "JE00140"
+   ],
+   "accounts": [
+    "6500",
+    "1300"
+   ],
+   "amount": "99000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1300",
+    "credit_account": "6500",
+    "amount": "99000.00"
+   }
+  },
+  {
+   "err_id": "E7",
+   "kind": "misclassified_expense",
+   "description": "Warehouse rent 20000 charged to professional services (6300) instead of rent (6100)",
+   "entry_ids": [
+    "JE00141"
+   ],
+   "accounts": [
+    "6300",
+    "6100"
+   ],
+   "amount": "20000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6100",
+    "credit_account": "6300",
+    "amount": "20000.00"
+   }
+  },
+  {
+   "err_id": "E8",
+   "kind": "intercompany_mismatch",
+   "description": "Intercompany services 67000 not recorded: consolidation mismatch",
+   "entry_ids": [],
+   "accounts": [
+    "6900",
+    "2500"
+   ],
+   "amount": "67000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6900",
+    "credit_account": "2500",
+    "amount": "67000.00"
+   }
+  },
+  {
+   "err_id": "E10",
+   "kind": "fx_revaluation",
+   "description": "Foreign-currency payable EUR 1700 not revalued: rate rose from 99.34 to 103.44, difference 6970.0000",
+   "entry_ids": [
+    "JE00142"
+   ],
+   "accounts": [
+    "6700",
+    "2000"
+   ],
+   "amount": "6970.0000",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6700",
+    "credit_account": "2000",
+    "amount": "6970.0000"
+   }
+  },
+  {
+   "err_id": "E12",
+   "kind": "service_span_cutoff",
+   "description": "Contract QB-88 for 168000 over 60 days expensed in full; 15 days fall in the period, 126000.00 to be deferred",
+   "entry_ids": [
+    "JE00143"
+   ],
+   "accounts": [
+    "1300",
+    "6300"
+   ],
+   "amount": "126000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1300",
+    "credit_account": "6300",
+    "amount": "126000.00"
+   }
+  }
+ ]
+}

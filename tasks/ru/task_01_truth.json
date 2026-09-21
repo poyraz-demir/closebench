@@ -1,0 +1,158 @@
+{
+ "errors": [
+  {
+   "err_id": "E2",
+   "kind": "duplicate_invoice",
+   "description": "Счёт AUD-114 проведён дважды (JE00134 и JE00135): завышены расходы и кредиторка на 24000",
+   "entry_ids": [
+    "JE00134",
+    "JE00135"
+   ],
+   "accounts": [
+    "6300",
+    "2000"
+   ],
+   "amount": "24000.00",
+   "fix": {
+    "type": "require_reversal",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "2000",
+    "credit_account": "6300",
+    "amount": "24000.00"
+   }
+  },
+  {
+   "err_id": "E3",
+   "kind": "capex_expensed",
+   "description": "Оборудование на 85000 со сроком службы 5 лет списано в прочие расходы вместо ОС",
+   "entry_ids": [
+    "JE00136"
+   ],
+   "accounts": [
+    "6900",
+    "1500"
+   ],
+   "amount": "85000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1500",
+    "credit_account": "6900",
+    "amount": "85000.00"
+   }
+  },
+  {
+   "err_id": "E8",
+   "kind": "intercompany_mismatch",
+   "description": "Межкомпанийные услуги 83000 не отражены: расхождение при консолидации",
+   "entry_ids": [],
+   "accounts": [
+    "6900",
+    "2500"
+   ],
+   "amount": "83000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6900",
+    "credit_account": "2500",
+    "amount": "83000.00"
+   }
+  },
+  {
+   "err_id": "E9",
+   "kind": "missing_recurring",
+   "description": "Начисление «связь и охрана» 10000 отсутствует за 08.2026; во всех прочих месяцах года оно есть",
+   "entry_ids": [],
+   "accounts": [
+    "6600",
+    "2100"
+   ],
+   "amount": "10000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6600",
+    "credit_account": "2100",
+    "amount": "10000.00"
+   }
+  },
+  {
+   "err_id": "E12",
+   "kind": "service_span_cutoff",
+   "description": "Договор QB-88 на 260000 за 60 дней списан целиком; в периоде 15 дней, к переносу 195000.00",
+   "entry_ids": [
+    "JE00137"
+   ],
+   "accounts": [
+    "1300",
+    "6300"
+   ],
+   "amount": "195000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "1300",
+    "credit_account": "6300",
+    "amount": "195000.00"
+   }
+  },
+  {
+   "err_id": "E13",
+   "kind": "payroll_cutoff",
+   "description": "Резерв по зарплате за 6 дней (26160) не начислен за 05.2026; во всех прочих месяцах начислялся",
+   "entry_ids": [],
+   "accounts": [
+    "6000",
+    "2200"
+   ],
+   "amount": "26160.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6000",
+    "credit_account": "2200",
+    "amount": "26160.00"
+   }
+  },
+  {
+   "err_id": "E14",
+   "kind": "depreciation_stopped",
+   "description": "Амортизация 4000 не начислена за 03.2026; ряд DEP рвётся",
+   "entry_ids": [],
+   "accounts": [
+    "6400",
+    "1590"
+   ],
+   "amount": "4000.00",
+   "fix": {
+    "type": "require_entry",
+    "period": [
+     "2026-11-01",
+     "2026-11-30"
+    ],
+    "debit_account": "6400",
+    "credit_account": "1590",
+    "amount": "4000.00"
+   }
+  }
+ ]
+}

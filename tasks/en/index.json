@@ -1,0 +1,215 @@
+[
+ {
+  "task": "task_01",
+  "seed": 1,
+  "lang": "en",
+  "period": {
+   "start": "2026-11-01",
+   "end": "2026-11-30"
+  },
+  "entries": 148,
+  "documents": 27,
+  "errors": 7,
+  "error_kinds": [
+   "duplicate_invoice",
+   "capex_expensed",
+   "intercompany_mismatch",
+   "missing_recurring",
+   "service_span_cutoff",
+   "payroll_cutoff",
+   "depreciation_stopped"
+  ]
+ },
+ {
+  "task": "task_02",
+  "seed": 2,
+  "lang": "en",
+  "period": {
+   "start": "2026-11-01",
+   "end": "2026-11-30"
+  },
+  "entries": 147,
+  "documents": 27,
+  "errors": 6,
+  "error_kinds": [
+   "capex_expensed",
+   "unrecorded_bank_fee",
+   "service_span_cutoff",
+   "depreciation_stopped",
+   "accrual_not_released",
+   "inventory_receipt_gap"
+  ]
+ },
+ {
+  "task": "task_03",
+  "seed": 3,
+  "lang": "en",
+  "period": {
+   "start": "2026-11-01",
+   "end": "2026-11-30"
+  },
+  "entries": 146,
+  "documents": 27,
+  "errors": 7,
+  "error_kinds": [
+   "revenue_cutoff",
+   "intercompany_mismatch",
+   "fx_revaluation",
+   "depreciation_prorata",
+   "service_span_cutoff",
+   "depreciation_stopped",
+   "prepaid_amort_stopped"
+  ]
+ },
+ {
+  "task": "task_04",
+  "seed": 4,
+  "lang": "en",
+  "period": {
+   "start": "2026-11-01",
+   "end": "2026-11-30"
+  },
+  "entries": 150,
+  "documents": 27,
+  "errors": 7,
+  "error_kinds": [
+   "duplicate_invoice",
+   "capex_expensed",
+   "prepaid_not_deferred",
+   "misclassified_expense",
+   "intercompany_mismatch",
+   "fx_revaluation",
+   "service_span_cutoff"
+  ]
+ },
+ {
+  "task": "task_05",
+  "seed": 5,
+  "lang": "en",
+  "period": {
+   "start": "2026-11-01",
+   "end": "2026-11-30"
+  },
+  "entries": 143,
+  "documents": 27,
+  "errors": 8,
+  "error_kinds": [
+   "unrecorded_invoice",
+   "missing_recurring",
+   "depreciation_prorata",
+   "service_span_cutoff",
+   "payroll_cutoff",
+   "depreciation_stopped",
+   "accrual_not_released",
+   "inventory_receipt_gap"
+  ]
+ },
+ {
+  "task": "task_06",
+  "seed": 6,
+  "lang": "en",
+  "period": {
+   "start": "2026-11-01",
+   "end": "2026-11-30"
+  },
+  "entries": 144,
+  "documents": 27,
+  "errors": 8,
+  "error_kinds": [
+   "unrecorded_invoice",
+   "capex_expensed",
+   "revenue_cutoff",
+   "fx_revaluation",
+   "payroll_cutoff",
+   "prepaid_amort_stopped",
+   "accrual_not_released",
+   "inventory_receipt_gap"
+  ]
+ },
+ {
+  "task": "task_07",
+  "seed": 7,
+  "lang": "en",
+  "period": {
+   "start": "2026-11-01",
+   "end": "2026-11-30"
+  },
+  "entries": 147,
+  "documents": 27,
+  "errors": 7,
+  "error_kinds": [
+   "unrecorded_invoice",
+   "duplicate_invoice",
+   "revenue_cutoff",
+   "missing_recurring",
+   "depreciation_prorata",
+   "payroll_cutoff",
+   "accrual_not_released"
+  ]
+ },
+ {
+  "task": "task_08",
+  "seed": 8,
+  "lang": "en",
+  "period": {
+   "start": "2026-11-01",
+   "end": "2026-11-30"
+  },
+  "entries": 147,
+  "documents": 27,
+  "errors": 7,
+  "error_kinds": [
+   "unrecorded_invoice",
+   "duplicate_invoice",
+   "capex_expensed",
+   "prepaid_not_deferred",
+   "service_span_cutoff",
+   "payroll_cutoff",
+   "inventory_receipt_gap"
+  ]
+ },
+ {
+  "task": "task_09",
+  "seed": 9,
+  "lang": "en",
+  "period": {
+   "start": "2026-11-01",
+   "end": "2026-11-30"
+  },
+  "entries": 146,
+  "documents": 27,
+  "errors": 8,
+  "error_kinds": [
+   "unrecorded_invoice",
+   "capex_expensed",
+   "unrecorded_bank_fee",
+   "missing_recurring",
+   "depreciation_prorata",
+   "service_span_cutoff",
+   "prepaid_amort_stopped",
+   "accrual_not_released"
+  ]
+ },
+ {
+  "task": "task_10",
+  "seed": 10,
+  "lang": "en",
+  "period": {
+   "start": "2026-11-01",
+   "end": "2026-11-30"
+  },
+  "entries": 146,
+  "documents": 27,
+  "errors": 8,
+  "error_kinds": [
+   "unrecorded_invoice",
+   "duplicate_invoice",
+   "prepaid_not_deferred",
+   "intercompany_mismatch",
+   "fx_revaluation",
+   "depreciation_prorata",
+   "depreciation_stopped",
+   "prepaid_amort_stopped"
+  ]
+ }
+]
