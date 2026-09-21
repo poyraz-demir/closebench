@@ -1,5 +1,7 @@
 # closebench
 
+[![tests](https://github.com/pahrya-arch/Closebench/actions/workflows/tests.yml/badge.svg)](https://github.com/pahrya-arch/Closebench/actions/workflows/tests.yml)
+
 Deterministic, seeded double-entry ledgers with planted month-end closing errors and a
 programmatic grader. Zero dependencies. Built for testing bookkeeping agents.
 
