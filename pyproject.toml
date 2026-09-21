@@ -8,7 +8,8 @@ version = "0.1.1"
 description = "Deterministic, seeded double-entry ledgers with planted closing errors and a programmatic grader — test fixtures for bookkeeping agents."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = "MIT"
+license-files = ["LICENSE"]
 keywords = [
   "accounting", "bookkeeping", "ledger", "double-entry", "month-end close",
   "test-fixtures", "benchmark", "agent-evaluation", "llm-agents", "fintech",
@@ -17,7 +18,6 @@ classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Developers",
   "Intended Audience :: Financial and Insurance Industry",
-  "License :: OSI Approved :: MIT License",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
