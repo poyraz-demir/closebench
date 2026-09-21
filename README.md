@@ -123,6 +123,7 @@ closebench --session demo --finish        # grades and seals the session
 ```
 
 Seeds ≥ 1000 select `absence` mode. Sessions are sealed after `--finish`.
+Session state lives in `./closebench_runs/` (override with `CLOSEBENCH_RUNS`).
 
 ## Running a model
 

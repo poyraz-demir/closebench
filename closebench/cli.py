@@ -7,7 +7,7 @@ from closebench.tools import Session, tool_spec
 from closebench.grader import grade
 from closebench.strings import T, LANGS
 
-RUNS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "runs")
+RUNS = os.environ.get("CLOSEBENCH_RUNS", os.path.join(os.getcwd(), "closebench_runs"))
 
 def state_path(sid): return os.path.join(RUNS, f"session_{sid}.json")
 

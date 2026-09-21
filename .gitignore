@@ -19,3 +19,6 @@ closebench/*.v2
 .vscode/
 .idea/
 *.swp
+
+# CLI session state
+closebench_runs/
