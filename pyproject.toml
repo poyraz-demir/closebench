@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "closebench"
-version = "0.1.0"
+version = "0.1.1"
 description = "Deterministic, seeded double-entry ledgers with planted closing errors and a programmatic grader — test fixtures for bookkeeping agents."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -26,6 +26,11 @@ classifiers = [
   "Topic :: Software Development :: Testing",
 ]
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/poyraz-demir/closebench"
+Repository = "https://github.com/poyraz-demir/closebench"
+Issues = "https://github.com/poyraz-demir/closebench/issues"
 
 [project.optional-dependencies]
 dev = ["pytest>=7"]
